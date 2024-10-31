@@ -1,0 +1,9 @@
+#include "oplsaa.ff/forcefield.itp"
+#include "oplsaa.ff/spce.itp"
+
+[ System ]
+SPCE
+
+[ Molecules ] 
+SOL 1054
+
