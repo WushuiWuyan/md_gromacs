@@ -1,0 +1,19 @@
+#
+# Thyroid hormone in an interface of water and carbon tetrachloride
+#
+
+
+tolerance 2.0
+filetype pdb
+output all.pdb
+
+structure WATER.pdb 
+  number 960 
+  inside box -25. -25. -25. 25. 25. 25. 
+end structure
+
+structure ethanol.pdb
+  number 300
+  inside box -25. -25. -25. 25. 25. 25.         
+end structure
+
