@@ -1,0 +1,243 @@
+;
+;	File 'topol.top' was generated
+;	At date: Mon Mar  6 17:29:12 2023
+;
+;	This is a standalone topology file
+;
+;	Created by:
+;	                :-) GROMACS - gmx pdb2gmx, 2020.6-MODIFIED (-:
+;	
+;	Executable:   D:\gmx2020.6_GPU\bin\gmx.exe
+;	Data prefix:  D:\gmx2020.6_GPU
+;	Working dir:  F:\tmp\gmx\CHX
+;	Command line:
+;	  gmx pdb2gmx -f chx.pdb
+;	Force field was read from the standard GROMACS share directory.
+;
+
+; Include forcefield parameters
+#include "oplsaa.ff/forcefield.itp"
+
+[ moleculetype ]
+; Name            nrexcl
+Other               3
+
+[ atoms ]
+;   nr       type  resnr residue  atom   cgnr     charge       mass  typeB    chargeB      massB
+; residue   0 CHX rtp CHX  q  0.0
+     1   opls_136      0    CHX     C1      1      -0.12     12.011
+     2   opls_136      0    CHX     C2      1      -0.12     12.011
+     3   opls_136      0    CHX     C3      1      -0.12     12.011
+     4   opls_136      0    CHX     C4      1      -0.12     12.011
+     5   opls_136      0    CHX     C5      1      -0.12     12.011
+     6   opls_136      0    CHX     C6      1      -0.12     12.011
+     7   opls_140      0    CHX     H1      1       0.06      1.008
+     8   opls_140      0    CHX     H2      1       0.06      1.008
+     9   opls_140      0    CHX     H3      1       0.06      1.008
+    10   opls_140      0    CHX     H4      1       0.06      1.008
+    11   opls_140      0    CHX     H5      1       0.06      1.008
+    12   opls_140      0    CHX     H6      1       0.06      1.008
+    13   opls_140      0    CHX     H7      1       0.06      1.008
+    14   opls_140      0    CHX     H8      1       0.06      1.008
+    15   opls_140      0    CHX     H9      1       0.06      1.008
+    16   opls_140      0    CHX    H10      1       0.06      1.008
+    17   opls_140      0    CHX    H11      1       0.06      1.008
+    18   opls_140      0    CHX    H12      1       0.06      1.008   ; qtot 0
+
+[ bonds ]
+;  ai    aj funct            c0            c1            c2            c3
+    1     2     1 
+    1     6     1 
+    1     7     1 
+    1     8     1 
+    2     3     1 
+    2     9     1 
+    2    10     1 
+    3     4     1 
+    3    11     1 
+    3    12     1 
+    4     5     1 
+    4    13     1 
+    4    14     1 
+    5     6     1 
+    5    15     1 
+    5    16     1 
+    6    17     1 
+    6    18     1 
+
+[ pairs ]
+;  ai    aj funct            c0            c1            c2            c3
+    1     4     1 
+    1    11     1 
+    1    12     1 
+    1    15     1 
+    1    16     1 
+    2     5     1 
+    2    13     1 
+    2    14     1 
+    2    17     1 
+    2    18     1 
+    3     6     1 
+    3     7     1 
+    3     8     1 
+    3    15     1 
+    3    16     1 
+    4     9     1 
+    4    10     1 
+    4    17     1 
+    4    18     1 
+    5     7     1 
+    5     8     1 
+    5    11     1 
+    5    12     1 
+    6     9     1 
+    6    10     1 
+    6    13     1 
+    6    14     1 
+    7     9     1 
+    7    10     1 
+    7    17     1 
+    7    18     1 
+    8     9     1 
+    8    10     1 
+    8    17     1 
+    8    18     1 
+    9    11     1 
+    9    12     1 
+   10    11     1 
+   10    12     1 
+   11    13     1 
+   11    14     1 
+   12    13     1 
+   12    14     1 
+   13    15     1 
+   13    16     1 
+   14    15     1 
+   14    16     1 
+   15    17     1 
+   15    18     1 
+   16    17     1 
+   16    18     1 
+
+[ angles ]
+;  ai    aj    ak funct            c0            c1            c2            c3
+    2     1     6     1 
+    2     1     7     1 
+    2     1     8     1 
+    6     1     7     1 
+    6     1     8     1 
+    7     1     8     1 
+    1     2     3     1 
+    1     2     9     1 
+    1     2    10     1 
+    3     2     9     1 
+    3     2    10     1 
+    9     2    10     1 
+    2     3     4     1 
+    2     3    11     1 
+    2     3    12     1 
+    4     3    11     1 
+    4     3    12     1 
+   11     3    12     1 
+    3     4     5     1 
+    3     4    13     1 
+    3     4    14     1 
+    5     4    13     1 
+    5     4    14     1 
+   13     4    14     1 
+    4     5     6     1 
+    4     5    15     1 
+    4     5    16     1 
+    6     5    15     1 
+    6     5    16     1 
+   15     5    16     1 
+    1     6     5     1 
+    1     6    17     1 
+    1     6    18     1 
+    5     6    17     1 
+    5     6    18     1 
+   17     6    18     1 
+
+[ dihedrals ]
+;  ai    aj    ak    al funct            c0            c1            c2            c3            c4            c5
+    6     1     2     3     3 
+    6     1     2     9     3 
+    6     1     2    10     3 
+    7     1     2     3     3 
+    7     1     2     9     3 
+    7     1     2    10     3 
+    8     1     2     3     3 
+    8     1     2     9     3 
+    8     1     2    10     3 
+    2     1     6     5     3 
+    2     1     6    17     3 
+    2     1     6    18     3 
+    7     1     6     5     3 
+    7     1     6    17     3 
+    7     1     6    18     3 
+    8     1     6     5     3 
+    8     1     6    17     3 
+    8     1     6    18     3 
+    1     2     3     4     3 
+    1     2     3    11     3 
+    1     2     3    12     3 
+    9     2     3     4     3 
+    9     2     3    11     3 
+    9     2     3    12     3 
+   10     2     3     4     3 
+   10     2     3    11     3 
+   10     2     3    12     3 
+    2     3     4     5     3 
+    2     3     4    13     3 
+    2     3     4    14     3 
+   11     3     4     5     3 
+   11     3     4    13     3 
+   11     3     4    14     3 
+   12     3     4     5     3 
+   12     3     4    13     3 
+   12     3     4    14     3 
+    3     4     5     6     3 
+    3     4     5    15     3 
+    3     4     5    16     3 
+   13     4     5     6     3 
+   13     4     5    15     3 
+   13     4     5    16     3 
+   14     4     5     6     3 
+   14     4     5    15     3 
+   14     4     5    16     3 
+    4     5     6     1     3 
+    4     5     6    17     3 
+    4     5     6    18     3 
+   15     5     6     1     3 
+   15     5     6    17     3 
+   15     5     6    18     3 
+   16     5     6     1     3 
+   16     5     6    17     3 
+   16     5     6    18     3 
+
+; Include Position restraint file
+#ifdef POSRES
+#include "posre.itp"
+#endif
+
+; Include water topology
+#include "oplsaa.ff/spce.itp"
+
+#ifdef POSRES_WATER
+; Position restraint for each water oxygen
+[ position_restraints ]
+;  i funct       fcx        fcy        fcz
+   1    1       1000       1000       1000
+#endif
+
+; Include topology for ions
+#include "oplsaa.ff/ions.itp"
+
+[ system ]
+; Name
+CHX in water
+
+[ molecules ]
+; Compound        #mols
+Other              10
+SOL              1000
