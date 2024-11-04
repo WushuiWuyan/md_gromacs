@@ -1,0 +1,14 @@
+#include "/home/xxxxxx/gmx/test/BCD-ANT/top/gromos54a7_atb.ff/forcefield.itp"
+#include "/home/xxxxxx/gmx/test/BCD-ANT/top/BCD.itp"
+#include "/home/xxxxxx/gmx/test/BCD-ANT/top/ANT.itp"
+#include "/home/xxxxxx/gmx/test/BCD-ANT/top/chl.itp"
+#include "/home/xxxxxx/gmx/test/BCD-ANT/top/spce.itp"
+
+[ System ]
+BCD ANT in oil-water interface
+
+[ Molecules ] 
+BCD      48
+ANT      32
+chl    3694
+SOL   10592
