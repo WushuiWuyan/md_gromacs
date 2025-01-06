@@ -1,0 +1,13 @@
+tolerance 2.0
+filetype pdb
+output water-4800.pdb
+
+structure water.pdb
+  number 2400
+  inside box 0. 0. 12. 41. 42. 48.
+end structure
+
+structure water.pdb
+  number 2400
+  inside box 0. 0. 112. 41. 42. 148.
+end structure
