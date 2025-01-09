@@ -1,0 +1,13 @@
+#include "/home/test/CNT-nanochannel/top/ATP.itp"
+#include "/home/test/CNT-nanochannel/top/CNC.itp"
+#include "/home/test/CNT-nanochannel/top/wall.itp"
+#include "/home/test/CNT-nanochannel/top/spce.itp"
+
+[ System ]
+water in CNT channel 6 nm
+
+[ Molecules ]
+CNC  1
+SOL 4800
+wall 2
+
