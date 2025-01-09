@@ -1,0 +1,16 @@
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               2               yes             0.5     0.8333
+
+[ atomtypes ]
+;name   bond_type     mass     charge   ptype   sigma         epsilon 
+; gra
+ca           6    12.010736  0.000000    A      3.399670E-01    3.598240E-01
+;spce
+OW_spc       8      15.9994  0.0000  A   3.16557e-01  6.50629e-01
+HW_spc       1       1.0080  0.0000  A   0.00000e+00  0.00000e+00
+
+[ nonbond_params ]
+;       i       j       func    c6      c12
+       ca       ca            1       0.0     0.0
+
