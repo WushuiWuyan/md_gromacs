@@ -1,0 +1,12 @@
+#include "/path/ILs.itp"
+#include "/path/Bmim_GMX-0.8.itp"
+#include "/path/Tf2N_GMX-0.8.itp"
+
+[ system ]
+BmimTf2N 800
+
+[ molecules ]
+; Molecule      nmols
+Bmim    800
+Tf2N    800
+
