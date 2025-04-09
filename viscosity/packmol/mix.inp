@@ -1,0 +1,14 @@
+tolerance 2.0
+filetype pdb
+output all-BmimTf2N-800.pdb
+
+structure Bmim.pdb 
+  number 800 
+  inside box 0. 0. 0. 70. 70. 140. 
+end structure
+
+structure Tf2N.pdb
+  number 800
+  inside box 0. 0. 0. 70. 70. 140. 
+end structure
+
